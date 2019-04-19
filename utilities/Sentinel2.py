@@ -391,18 +391,24 @@ class Sentinel2DataExtractor(object):
             os.mkdir(self.output_dir)
 
     def __list_zones(self):
-        for fname in glob(os.path.join(self.input_dir, '**/*.zip'), recursive=True):
+        for fname in glob(os.path.join(self.input_dir, '**/*.zip')):
             basename = os.path.basename(fname).replace('.zip', '')
             zone = basename.split('_')[3]
             self.zones.append(zone)
+        self.zones=set(self.zones)
 
     def extract(self):
         self.__list_zones()
+        
         for zone in self.zones:
             zone_dir = os.path.join(self.output_dir, zone)
+            
             if not os.path.exists(zone_dir):
-                os.mkdir(zone_dir)        
-            for fname in glob(os.path.join(self.input_dir, '**/*.zip'), recursive=True):
+                os.mkdir(zone_dir)
+            
+            
+            for fname in glob(os.path.join(self.input_dir, '**/*.zip')):
+               
                 print(colored('#    Unzipping: {}'.format(fname),'yellow'))
                 start_time = time.time()
                 zfile = zipfile.ZipFile(file=fname)
