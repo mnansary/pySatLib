@@ -1,11 +1,8 @@
-# Forestry 
-  -- shpfile source -- https://gadm.org/download_country_v3.html
-  -- selective masking -- QGIS (3.2)  
-
-# Sentinel2 Data 
-    Downloaded From -- https://theia.cnes.fr/atdistrib/rocket/
-# Landsat Data  
-    Downloaded From --https://earthexplorer.usgs.gov/
+# Satellite Data Handling Library
+## Sentinel2 Data 
+  [https://theia.cnes.fr/atdistrib/rocket/]
+## Landsat Data  
+  [https://earthexplorer.usgs.gov/]
 
 # python version 
     3.6.7
@@ -55,7 +52,7 @@
 
     optional arguments:  
     -h, --help       show this help message and exit  
-# Sentinel2 Specific -- USE -h to see useage 
+# Sentinel2 Specific Scripts
     Sentinel2_genAnalytics.py  
     Sentinel2_genIndexData.py  
     Sentinel2_genWatermask.py   
