@@ -1,16 +1,29 @@
 # Satellite Data Handling Library
-### Sentinel2 Data 
-  https://theia.cnes.fr/atdistrib/rocket/
+### Sentinel2 Data
+![](/src_img/cnes.ico?raw=true )
+![](/src_img/esa.ico?raw=true )
+![](/src_img/cop.ico?raw=true )
+![](/src_img/sen.ico?raw=true )  
+https://theia.cnes.fr/atdistrib/rocket/
+
 ### Landsat Data  
-  https://earthexplorer.usgs.gov/
+![](/src_img/usgs.ico?raw=true )
+https://earthexplorer.usgs.gov/
 # Bangladesh Shapefile
+![](/src_img/bd.ico?raw=true )
+![](/src_img/qgis.ico?raw=true )
+
   https://gadm.org/download_country_v3.html
-# python version 
-    3.6.7
+# python - 3.6.7 
+![](/src_img/python.ico?raw=true )
+    
 # Dependancy Check -- 
     Install --GDAL,basemap,termcolor
 #### For BaseMap
     Install -pyproj==1.9.3
+
+![](/src_img/gdal.ico?raw=true )
+
 # Useage -- Data Extraction -- extractor.py
     usage: extractor.py [-h] source target satellite
 
